@@ -1,0 +1,116 @@
+% --------------------------------------------------------------------------
+% UNOFFICIAL LATEX TEMPLATE: European Review of Agricultural Economics (ERAE)
+% --------------------------------------------------------------------------
+% Created for free use and modification.
+% 
+% IMPORTANT SUBMISSION NOTES (Ref: ERAE Guidelines):
+% 1. ANONYMITY: Author names/affiliations on the FIRST PAGE ONLY.
+% 2. LENGTH: Max 8,000 words including tables/figures.
+% 3. ABSTRACT: Max 100 words.
+% 4. STYLE: Use British English and single quotation marks.
+% 5. TABLES: Do not use vertical lines.
+% 6. ETHICS: If using human subjects (surveys, etc.), you MUST include 
+%    an ethics statement in the Methods section.
+% 7. DATA: Be prepared to provide data/code for replication upon 
+%    acceptance.
+% --------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+% --- Essential Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel} % Use British English spelling 
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{setspace}
+\doublespacing % All text should have double-line spacing 
+\usepackage{natbib} % For author-year citations 
+\usepackage{authblk} % For affiliations on the first page 
+\usepackage{titlesec}
+\usepackage{booktabs} % For professional tables without vertical lines 
+\usepackage{graphicx}
+\usepackage{caption}
+
+% --- Section Heading Setup ---
+% Manuscripts should have no more than three grades of headings
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesection.\thesubsection.}{1em}{}
+
+% --- Manuscript Metadata ---
+\title{Title of Your Manuscript}
+
+% NOTE: Name/affiliation on the first page only for anonymity 
+
+\author[1]{Author One}
+\author[1,2]{Author Two}
+\author[2]{Author Three}
+
+\affil[1]{Department, University, City, Country}
+\affil[2]{Department, University, City, Country}
+
+\affil[ ]{\textit{johndoe@email.com}} % Corresponding author email
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% --- Acknowledgements Footnote ---
+% Background info and sponsoring bodies appear as a footnote on page 1 
+\let\thefootnote\relax\footnotetext{General acknowledgements and research sponsorship details go here.}
+
+\newpage
+
+% --- Abstract and Keywords ---
+\begin{abstract}
+% No more than 100 words 
+% Must include conclusions, methods, and line of reasoning 
+Your abstract text goes here. It must be concise and informative.
+\end{abstract}
+
+\noindent \textbf{Keywords:} Keyword1, Keyword2, Keyword3, Keyword4, Keyword5 
+% Maximum of five keywords 
+
+\newpage
+
+% --- Main Body ---
+\section{Introduction}
+Articles should not exceed 8,000 words, including tables and figures. Use single quotation marks throughout. Acronyms must be spelled out in full at their first appearance.
+
+\section{Methods}
+% Ethical compliance must be stated in the Methods section 
+The research follows ethical standards. [State IRB approval or justification for exemption here].
+
+\section{Results}
+% Equations must use essential notation and be numbered consecutively
+\begin{equation}
+    A = \pi r^2
+\end{equation}
+
+% Tables/Figures should be near their citation in the text
+\begin{table}[h]
+\caption{Table captions use initial capitals only} 
+\label{tab:example}
+\centering
+\begin{tabular}{lcc}
+\toprule
+Variable & Mean & SD \\
+\midrule
+Data A & 10.5 & 1.2 \\
+Data B & 20.1 & 4.5 \\
+\bottomrule
+\end{tabular}
+% Avoid vertical lines in tables 
+\end{table}
+
+\section{Conclusion}
+Summarise the main findings and implications for agricultural economics.
+
+% --- References ---
+\newpage
+\bibliographystyle{apalike} % Closest to the Swinnen (1997) style required 
+\bibliography{references} 
+% Collect references at the end of the manuscript 
+
+\end{document}
